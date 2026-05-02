@@ -23,9 +23,10 @@ app.use(express.json());
 // API Routes
 app.use("/api", healthRoutes);
 app.use("/api/auth", authRoutes);
-app.use("/projects", projectRoutes);
-app.use("/tasks", taskRoutes);
-app.use("/dashboard", dashboardRoutes);
+app.use("/api/projects", projectRoutes);
+app.use("/api/tasks", taskRoutes);
+app.use("/api/dashboard", dashboardRoutes);
+app.use("/api/users", userRoutes);
 
 // Serve static files in production
 if (process.env.NODE_ENV === "production") {
