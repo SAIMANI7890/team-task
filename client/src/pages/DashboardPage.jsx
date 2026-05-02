@@ -144,10 +144,6 @@ export default function DashboardPage() {
           <div className="dashboard-progress-bar" aria-hidden="true">
             <span style={{ width: `${completionRate}%` }} />
           </div>
-          {/* Debug info - remove after testing */}
-          <div style={{ fontSize: '12px', color: '#888', marginTop: 8 }}>
-            Role: {userRole || 'none'} | Admin: {isAdmin ? 'YES' : 'NO'}
-          </div>
           <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 12 }}>
             {isAdmin && (
               <Link className="counter" to="/projects">
